@@ -1,0 +1,18 @@
+start the pGMIA
+Region-layer MLE finished
+shift_vector: [0, 2, 4, 1, 3, 5]
+Initialization finished.
+iter:  199  at time  7802.5814509391785
+Region-layer MLE finished
+/home/lpei/.local/lib/python3.6/site-packages/scipy/optimize/_constraints.py:367: OptimizeWarning: Constraint option `keep_feasible` is ignored by this method.
+  "method.", OptimizeWarning)
+Traceback (most recent call last):
+  File "main.py", line 438, in <module>
+    output = pGMIA(file_name, seed, max_iter, size, processor_generator)
+  File "main.py", line 376, in pGMIA
+    sampled_vec, sampled_rep, sampled_output, sampled_var, master_generator)
+  File "/home/lpei/scratch/02152024pGMIA/projection_selection.py", line 366, in projection_selection
+    grid_dim_reg, grid_dim_sol, sampled_reg_index, dim_reg, dim_sol, n_sol)
+  File "/home/lpei/scratch/02152024pGMIA/MLE.py", line 105, in MLE
+    temp_sol_output = all_sol_output[opt_sol_reg, design_sol_index]     # n2 array, sampled output at opt_sol_reg
+IndexError: shape mismatch: indexing arrays could not be broadcast together with shapes (2,) (30,) 
